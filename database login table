@@ -1,0 +1,18 @@
+drop table Login_Table;
+ 
+
+CREATE TABLE Login_Table (
+   
+    userName  VARCHAR(20) NOT NULL,
+    passwords VARCHAR(20),
+    question VARCHAR(30),
+    answer VARCHAR(20),
+    CONSTRAINT Login_Table_userName_UQ UNIQUE(userName)
+    
+    );
+INSERT INTO Login_Table (userName,passwords,question,answer) 
+VALUES('monalizanzane','monali$123','Fevoriteflower','rose');
+INSERT INTO Login_Table VALUES('rutujagtap','rutu1$123','Favoriteflower ','lotus');
+INSERT INTO Login_Table VALUES('poonamroy','poonam$123','Fevoriteflower','rose');
+INSERT INTO Login_Table VALUES('shreyameheta','shreya$123','Fevoriteflower','jasmin');
+INSERT INTO Login_Table VALUES('nitigupta','niti$123','Fevoriteflower','july');
